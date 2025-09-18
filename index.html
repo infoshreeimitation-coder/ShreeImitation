@@ -21,14 +21,32 @@
       font-weight: bold;
     }
     .container {
-      margin-top: 50px;
+      margin: 30px auto;
+      max-width: 900px;
+      padding: 20px;
     }
     h1 {
       color: #b92024;
+      margin-bottom: 10px;
     }
     p {
       font-size: 18px;
+      margin: 15px 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
       margin: 20px 0;
+    }
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .video {
+      margin: 30px 0;
     }
     .whatsapp-btn {
       display: inline-block;
@@ -59,10 +77,31 @@
   
   <div class="container">
     <h1>Welcome to Shree Imitation Jewellery</h1>
-    <p>Explore our beautiful collection of imitation jewellery.<br>Order now directly on WhatsApp!</p>
-    <a class="whatsapp-btn" href="https://wa.me/919023698458?text=Hello%20Shree%20Imitation%20Jewellery%2C%20I%20am%20interested%20in%20your%20collection" target="_blank">
-      💬 Chat on WhatsApp
-    </a>
+    <p>Premium imitation jewellery for every occasion – Bridal, Party Wear & Daily Wear.</p>
+    
+    <!-- Gallery Section -->
+    <h2>Our Collection</h2>
+    <div class="gallery">
+      <img src="" alt="Jewellery Design 1">
+      <img src="your-image2.jpg" alt="Jewellery Design 2">
+      <img src="your-image3.jpg" alt="Jewellery Design 3">
+    </div>
+
+    <!-- Video Section -->
+    <div class="video">
+      <h2>Watch Our Video</h2>
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/VIDEO_ID" 
+        frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <p>
+      <a class="whatsapp-btn" href="https://wa.me/919023698458?text=Hello%20Shree%20Imitation%20Jewellery%2C%20I%20am%20interested%20in%20your%20collection" target="_blank">
+        💬 Order Now on WhatsApp
+      </a>
+    </p>
   </div>
 
   <footer>
